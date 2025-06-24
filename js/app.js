@@ -22,7 +22,9 @@ const somma3 =(num1,num2)=>{
 
 console.log(somma3(4,5))
 
+// Snack 2
 
+const quadrato = (num)=> num * num 
 
-
+console.log(quadrato(5))
 
