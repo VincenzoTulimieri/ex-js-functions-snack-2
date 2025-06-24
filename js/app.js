@@ -54,5 +54,15 @@ function creaTimer(time) {
     }
 }
 
-const timer = creaTimer(5000)
+const timer = creaTimer(1000)
 timer()
+
+console.log('--------')
+// snack 5
+
+function stampaOgniSecondo(){
+    let stampaMessaggio = setInterval(()=> console.log('sono il messaggio'), 1000) 
+    const stopMessaggio = setTimeout(()=> clearInterval(stampaMessaggio), 5000)
+}
+
+stampaOgniSecondo()
