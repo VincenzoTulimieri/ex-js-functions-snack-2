@@ -55,7 +55,7 @@ function creaTimer(time) {
 }
 
 const timer = creaTimer(1000)
-timer()
+// timer()
 
 console.log('--------')
 // snack 5
@@ -65,4 +65,20 @@ function stampaOgniSecondo(){
     const stopMessaggio = setTimeout(()=> clearInterval(stampaMessaggio), 5000)
 }
 
-stampaOgniSecondo()
+// stampaOgniSecondo()
+
+console.log('--------')
+// snack 6 
+
+
+
+function creaContatoreAutomatico(time){
+    let count = 0
+    return function(){
+        let incrementoContatore= setInterval(()=> console.log(count++), time)
+        const stopContatore = setTimeout(()=> clearInterval(incrementoContatore), 6000)
+    }
+}
+
+const contatore = creaContatoreAutomatico(1000)
+contatore()
