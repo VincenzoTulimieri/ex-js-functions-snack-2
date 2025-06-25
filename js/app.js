@@ -81,4 +81,19 @@ function creaContatoreAutomatico(time){
 }
 
 const contatore = creaContatoreAutomatico(1000)
-contatore()
+// contatore()
+
+console.log('--------')
+// snack 7 
+
+function eseguiEferma(mex,interval,duration){
+    const stampaMessaggio = setInterval(()=>{
+        console.log(mex)
+    }, interval)
+
+    setTimeout(()=>{
+        clearInterval(stampaMessaggio)
+    },duration)
+}
+
+eseguiEferma('sto eseguendo...', 1000, 5000,)
